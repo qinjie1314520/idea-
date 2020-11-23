@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.idea.plugins</id>
+    <!--这个是在idea已安装插件那里显示的名字-->
+    <name>hello</name>
+    <vendor email="1768923041@qq.com">qinjie</vendor>
+    <!--这个是在idea已安装插件那里显示的-->
+    <description><![CDATA[
+   test<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="com.first.translate" text="translate" description="translate">
+            <action id="com.first.translate.translate" class="com.first.translate.translate" text="translate" description="translate" />
+            <!--添加到菜单栏尾部-->
+            <add-to-group group-id="MainMenu" anchor="last"  />
+        </group>
+    </actions>
+</idea-plugin>
